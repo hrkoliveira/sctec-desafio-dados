@@ -72,6 +72,7 @@ sctec-desafio-dados/
 │   └── analise_exploratoria.ipynb  # Notebook principal da análise
 ├── src/
 │   ├── gerar_dados.py         # Script de geração do dataset
+│   ├── analise.py             # Script standalone (alternativa ao notebook)
 │   └── criar_notebook.py      # Script auxiliar de criação do notebook
 └── outputs/
     ├── setores_economicos.png
@@ -108,15 +109,25 @@ pip install -r requirements.txt
 
 ### Executar
 
+**Opção 1 — Jupyter Notebook (recomendado):**
 ```bash
-# Gerar os dados (opcional — o CSV já está incluso no repositório)
-python src/gerar_dados.py
-
-# Abrir o notebook
+# Abrir o notebook interativo
 jupyter notebook notebooks/analise_exploratoria.ipynb
 ```
+O notebook pode ser executado célula a célula ou de uma vez com `Cell > Run All`.
 
-O notebook pode ser executado célula a célula ou de uma vez com `Cell > Run All`. Todos os gráficos serão gerados e salvos automaticamente na pasta `outputs/`.
+**Opção 2 — Script standalone (sem Jupyter):**
+```bash
+# Executar análise completa via terminal
+python src/analise.py
+```
+Imprime estatísticas no terminal e salva os gráficos em `outputs/`.
+
+**Gerar dados novamente (opcional):**
+```bash
+python src/gerar_dados.py
+```
+O CSV já está incluso no repositório — só necessário se quiser regenerar.
 
 ## Vídeo Pitch
 
