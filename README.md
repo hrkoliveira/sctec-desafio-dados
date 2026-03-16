@@ -131,7 +131,7 @@ O CSV já está incluso no repositório — só necessário se quiser regenerar.
 
 ## Vídeo Pitch
 
-[Link para o vídeo pitch](#) *(substituir pelo link do YouTube após gravação)*
+[Assistir o vídeo pitch no YouTube](https://youtu.be/dVJOA_o3zpQ)
 
 ---
 
